@@ -2,7 +2,7 @@
 
 x-airflow-common: &airflow-common
   image: apache/airflow:2.9.2
-  environment: &airflow-env
+  environment:
     AIRFLOW__CORE__EXECUTOR: CeleryExecutor
     AIRFLOW__CORE__FERNET_KEY: 'c1bUyo5K0SWfPRZ4PZ7xqJLDqZB6e4Eye8mQeOcqCcs='
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@airflow-postgres:5432/airflow
